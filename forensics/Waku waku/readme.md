@@ -2,6 +2,7 @@
 
 Anya loves playing her favorite game of being a spy, and this time she's hidden a secret message using steganography. Decode these "Little Spy Blurbs" to uncover Anya's secret mission. A spy...this is so exciting! Waku Waku! Good luck, agent! 
 Author: B3ll4tr1x
+points: 500
 
 ![image](waku_waku.png)
 
