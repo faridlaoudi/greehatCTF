@@ -3,17 +3,16 @@
 Anya loves playing her favorite game of being a spy, and this time she's hidden a secret message using steganography. Decode these "Little Spy Blurbs" to uncover Anya's secret mission. A spy...this is so exciting! Waku Waku! Good luck, agent! 
 Author: B3ll4tr1x
 
-this is the ![image](waku_waku.png)
+![image](waku_waku.png)
 
 # Solution
 
-To get the file: `wget https://artifacts.picoctf.net/c_titan/53/mobpsycho.apk`, then `unzip mobpsycho.apk`. Note: Be sure to be the folder you want all the files to be located. 
+The key to solving this challenge was in the name “Little Spy Blurbs.” Observing the capitalization pattern of the first letters in each word reveals the acronym "LSB," which stands for Least Significant Bit in the realm of steganography. This clue pointed us towards a common method used for hiding information in images.
 
-It gives a lot of files to look through so by using various common search terms like ctf, pico, and flag this command showed something useful `strings * | grep flag`. It shows `res/color/flag.txt` near the end of the output.
+To extract the hidden message, we utilized the tool zsteg, which is specifically designed to analyze and extract information from images encoded with the Least Significant Bit technique.
+`zsteg -a waku-waku.png`
+the first thing appeared was a sentence encoded in ROT13: `abguvat_gb_frr_urer`. Decoding this with ROT13 revealed the phrase "nothing_to_see_here."
+after scrolling we can see the flag
 
-To verify, `ls -R | grep flag -B 20`, which recursively lists out everything and got the 20 lines above flag.txt to see that it is indeed at file in ./res/color directory.
-
-Then the outputs of flag.txt could be retrieved with `cat res/color/flag.txt` which gives encoded text. You could take the output and put it into [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Hex('None')) and decode with Hex or use xxd as shown in this command: `cat res/color/flag.txt | xxd -r -p`. This gives the flag.
-
-Flag: `picoCTF{ax8mC0RU6ve_NX85l4ax8mCl_a3e...}`
+Flag: `microCTF{4r3_U_th1$_cut:3}`
 
