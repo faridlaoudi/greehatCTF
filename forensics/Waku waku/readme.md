@@ -13,6 +13,7 @@ To extract the hidden message, we utilized the tool zsteg, which is specifically
 `zsteg -a waku-waku.png`
 the first thing appeared was a sentence encoded in ROT13: `abguvat_gb_frr_urer`. Decoding this with ROT13 revealed the phrase "nothing_to_see_here."
 after scrolling we can see the flag
+![flag](zstg.png)
 
 Flag: `microCTF{4r3_U_th1$_cut:3}`
 
