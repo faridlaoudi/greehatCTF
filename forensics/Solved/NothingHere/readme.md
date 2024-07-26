@@ -11,7 +11,7 @@ point : 230
 We have a zip file when i tried to extract the file with unzip an error occured `file #1:  bad zipfile offset (local header sig):  0 `
 so the file is damaged.
 i will use ghex to check his hex code
-i searched in the internet for the magic header of the zip files ![url](https://en.wikipedia.org/wiki/List_of_file_signatures)
+i searched in the internet for the magic header of the zip files [List of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures)
 i found that the magic header is damaged
 
 ![header](header.png)
