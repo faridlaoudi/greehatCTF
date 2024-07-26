@@ -1,11 +1,9 @@
 # Description
 
-This picture hides a secret behind it. Can you unveil it?
+choupi joined Hogwarts, during a lesson he failed to reveal the flag, can you help him?
 
-Author: AN1S
-point : 50
-
-![image](zawra.jpg)
+Author: B3ll4tr1x
+point : 500
 
 # Solution
 The first thing we used is `strings` command to see if the flag is hiding in it, and with
