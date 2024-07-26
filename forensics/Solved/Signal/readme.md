@@ -9,7 +9,7 @@ point : 275
 # Solution
 After hearing the sound, we recognized it as similar to an old TV sound. Suspecting it might be an SSTV (Slow Scan Television) signal, we searched for an SSTV decoder and found `QSSTV`.
 after that we launched the sound with vlc and we found a picture with the flag in it
-!(flag)[flag.png]
+![flag](flag.png)
 
 Flag: `microCTF{s$tv_1s_4m4Z1ng}`
 
