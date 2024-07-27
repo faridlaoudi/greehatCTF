@@ -1,0 +1,2 @@
+# GreenHatCTF Write-Ups
+Welcome to the repository of my detailed write-ups for the GreenHatCTF, organized by Micro Club. Our team successfully secured the first place in this exciting and challenging Capture The Flag (CTF) competition. This repository aims to provide a thorough explanation of the techniques, tools, and thought processes we employed to solve the various challenges presented during the competition.
